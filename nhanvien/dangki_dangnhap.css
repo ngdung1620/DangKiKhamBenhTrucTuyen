@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(https://cdn.thuvienphapluat.vn/tintuc/uploads/image/2020/09/15/quan-ly-kham-chua-benh-qua-he-thong-thong-tin-quan-ly-tram-y-te-xa.png)
+    top center/ cover no-repeat;
+  background-size: 100%;
+}
+.head {
+  margin-top: 10px;
+}
+.text-white {
+  color: white;
+}
+
+.tkmk {
+  display: block;
+  border: none;
+  font-size: 20px;
+  padding: 8px;
+  background-color: #f0f8ff00;
+  border-bottom: 2px solid #ffffffb3;
+  width: 100%;
+  margin-top: 30px;
+  outline: none;
+}
+
+.container {
+  padding: 48px;
+  background-image: linear-gradient(
+    to right,
+    rgba(221, 217, 217, 0.959),
+    rgba(51, 210, 221, 0.733)
+  );
+  width: 650px;
+  margin: 120px auto;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 32px 0px;
+  border: 2px solid #7272727a;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2 ease;
+}
+select:focus,
+:focus {
+  outline: none;
+}
+.submit:hover {
+  background-color: #fcba03;
+}
+.lk {
+  font-size: 16px;
+}
+
+.sameform {
+  line-height: 1.8;
+  font-size: 20px;
+  opacity: 0.6;
+  padding: 12px;
+  transform: translateX(-30px);
+  padding: 8px;
+  outline: none;
+}
+
+.samaselectinfo {
+  width: 74%;
+  padding: 4px;
+  font-size: 18px;
+  border: none;
+  border-radius: 20px;
+}

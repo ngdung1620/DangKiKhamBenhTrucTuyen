@@ -1,0 +1,147 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.symbol {
+  display: flex;
+}
+.symbol span {
+  display: block;
+  text-align: center;
+}
+.logo {
+  width: 120px;
+  height: 70px;
+}
+.main {
+  min-height: 90vh;
+}
+/* heading */
+.user {
+  position: relative;
+}
+.user__name {
+  cursor: pointer;
+}
+.user__option {
+  position: absolute;
+  top: 130%;
+  right: -40px;
+  list-style: none;
+  width: 150px;
+
+  z-index: 1;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+
+  display: none;
+  transform-origin: 60% top;
+  animation: lon ease-in 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@keyframes lon {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.user__option::before {
+  content: "";
+  border: 10px solid;
+  border-color: transparent transparent white transparent;
+  position: absolute;
+  top: -15px;
+  right: 30%;
+}
+.user__option::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+.user:hover .user__option {
+  display: block;
+}
+
+.user__option-item {
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding-left: 30px;
+}
+.user__option-item a {
+  text-decoration: none;
+  color: #3d3d3d;
+}
+.user__option-item:hover {
+  background-color: #fafafa;
+}
+.user__option-item:hover a {
+  color: #1f79fd;
+}
+.user__option-item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.user__option-item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* head */
+.head {
+  margin: 50px 0;
+}
+.head__title {
+  margin-top: 15px;
+  position: relative;
+  font-weight: 400;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #16afed;
+}
+.head__title::after {
+  content: "";
+  width: 70px;
+  height: 3px;
+  padding: 2px;
+  background-color: #5d5d5d;
+
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* contact */
+.content-contact {
+  height: 600px;
+  padding: 10px 0;
+  position: relative;
+}
+.contact-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 4px;
+}
+.contact-address {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: white;
+}
